@@ -1,0 +1,32 @@
+.list__container {
+    margin-top: 25px;
+
+}
+
+.item__container {
+    width: 67%;
+}
+.item__title {
+    padding: 6px;
+}
+.item__flex {
+    display: flex;
+
+}
+.item__save {
+
+    display: flex;
+
+
+}
+.item__titleInput {
+    width: 100%;
+    padding: 6px;
+}
+.item__saveInput {
+    width: 100%;
+    padding-left: 25px;
+}
+.item__saveButton {
+    margin-left: auto;
+}
