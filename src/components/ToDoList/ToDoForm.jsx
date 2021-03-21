@@ -1,11 +1,13 @@
-import React, {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React, {useState,useEffect} from "react";
+import {useDispatch} from "react-redux";
 import {addNewToDo} from "../../redux/todolist-reducer";
 
 
 let ToDoForm = (props) => {
+
     const dispatch = useDispatch()
     const [value, setValue] = useState('')
+
 
     const onSubmit = e => {
         e.preventDefault();
@@ -15,7 +17,6 @@ let ToDoForm = (props) => {
             dispatch(addNewToDo(value))
             setValue('')
         }
-
     }
 
     return <form onSubmit={onSubmit}>

@@ -7,14 +7,13 @@ import {removeToDo, updateTodo} from "../../redux/todolist-reducer";
 
 
 const ListItem = (props) => {
-
-    const dispatch = useDispatch();
-    let [editMode, setEditMode] = useState(false);
-    const [value, setValue] = useState('')
-
     const title = props.list.title;
     const id = props.list.id;
     const idx = props.idx;
+    const dispatch = useDispatch();
+    const [editMode, setEditMode] = useState(false);
+    const [value, setValue] = useState('')
+
 
     const updateMode = () => {
         if (editMode) {
