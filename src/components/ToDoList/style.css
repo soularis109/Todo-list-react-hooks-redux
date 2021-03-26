@@ -7,26 +7,35 @@
     width: 67%;
 }
 .item__title {
-    padding: 6px;
+    padding: 10px ;
 }
 .item__flex {
     display: flex;
 
 }
 .item__save {
-
     display: flex;
-
 
 }
 .item__titleInput {
-    width: 100%;
-    padding: 6px;
+    padding: 10px 45px;
+
 }
 .item__saveInput {
-    width: 100%;
-    padding-left: 25px;
+
 }
 .item__saveButton {
     margin-left: auto;
+}
+.item__edit {
+    padding-left: 5px;
+    border: none;
+    background: none;
+}
+.item__save {
+    width: 35px;
+    height: 35px;
+}
+.item__change {
+    margin-left: 35px;
 }

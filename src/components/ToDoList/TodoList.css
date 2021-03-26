@@ -1,0 +1,16 @@
+.todo__add {
+    width: 35px;
+    height: 35px;
+
+}
+.todo__btn {
+    padding-left: 20px;
+    background: none;
+    border: none;
+}
+.todo__inp {
+    padding: 8px 78px;
+}
+.todo__form {
+    padding-top: 25px;
+}

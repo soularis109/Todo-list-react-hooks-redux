@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+}
+.headerName {
+    padding-top: 30px;
+    margin-left:auto
+}
+
+.header__user {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.headerLink {
+    border: 1px solid #282c34;
+    text-decoration: none;
+}
+
+.exit {
+   width: 20px;
+    height: 20px;
+
+}
+.header__btn {
+    background: none;
+    border: none;
+}

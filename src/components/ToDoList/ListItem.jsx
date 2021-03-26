@@ -2,7 +2,9 @@ import React, {useState, useEffect} from "react";
 import './style.css';
 import {useDispatch} from "react-redux";
 import {removeToDo, updateTodo} from "../../redux/todolist-reducer";
-
+import Save from '../utils/floppy-disk.svg'
+import Edit from "../utils/edit.svg";
+import Delete from "../utils/rubbish-bin.svg";
 
 
 
@@ -33,9 +35,11 @@ const ListItem = (props) => {
                                 onChange={e => setValue(e.target.value)} value={value}   autoFocus={true}/> : <div className='item__title border'>{title}</div>}</div>
                 </div>
 
-                <div>
-                    <button className='item__edit btn btn-light' onClick={updateMode}>{editMode ? 'Save' : 'Edit'}</button>
-                    <button className='item__delete btn btn-dark' onClick={() => dispatch(removeToDo(idx))}>Delete
+                <div className='item__change'>
+                    <button className='item__edit' onClick={updateMode}>{editMode ? <img src={Save} className='item__save'/>
+                        : <img src={Edit} className='item__save'/>}</button>
+                    <button className='item__edit' onClick={() => dispatch(removeToDo(idx))}>
+                        <img src={Delete} className='item__save'/>
                     </button>
                 </div>
             </div>
